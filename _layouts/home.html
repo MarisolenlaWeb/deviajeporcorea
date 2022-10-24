@@ -25,9 +25,9 @@ layout: default
                     {% if forloop.index0 == 4 %}grid__card__five{% endif %}
                     {% if forloop.index0 == 5 %}grid__card__six{% endif %}
                     {% if forloop.index0 == 6 %}grid__card__seven{% else %}grid__card{% endif %}">
-        <img class="card-img-top" src="{{ site.baseurl }}/assets/img/como-planificar-un-viaje-a-corea-del-sur.jpeg" alt="Card image">
+        <img class="card-img-top" src="/assets/img/como-planificar-un-viaje-a-corea-del-sur.jpeg" alt="Card image">
         <div class="card-img-overlay">
-            <a href="{{ site.baseurl }}/posts/{{ post.category | slugize }}" class="text-decoration-none text-white"><p class="card-category">{{ post.category | slugize }}</p></a>
+            <a href="/posts/{{ post.category | slugize }}" class="text-decoration-none text-white"><p class="card-category">{{ post.category | slugize }}</p></a>
             <a href="{{ post.url | relative_url }}" class="text-decoration-none text-white"><h3 class="card-title mt-3 mb-3">{{ post.title | escape }}</h3></a> 
             <a href="{{ post.url | relative_url }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
