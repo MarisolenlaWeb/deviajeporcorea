@@ -22,13 +22,10 @@ title: De viaje por Corea
 
 description: >- # this means to ignore newlines until "baseurl:"
   Doramas, k-music, comida y cultura coreana. Un lugar para los que amamos Corea del Sur. 🍜🇰🇷❤️
-<<<<<<< HEAD
+
 # baseurl: "deviajeporcorea" # the subpath of your site, e.g. /blog
 # url: "https://marisolenlaweb.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-=======
-baseurl: "deviajeporcorea" # the subpath of your site, e.g. /blog
-url: "https://marisolenlaweb.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
->>>>>>> c5b0542170995752e28bb62e1fe8402fe9fd8e15
+
 author: Marisol Carrillo
 email: marisolenlaweb@gmail.com
 
