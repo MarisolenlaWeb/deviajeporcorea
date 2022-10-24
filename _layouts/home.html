@@ -3,17 +3,6 @@ layout: default
 ---
 <!-- Grid Blog -->
 
-<section class="py-5 text-center container">
-  <div class="row py-lg-5">
-    <div class="col-lg-6 col-md-8 mx-auto">
-      <h1 class="fw-light">{{ site.title | escape }}</h1>
-      <p class="lead text-muted">Doramas, k-music, comida y cultura coreana. <br>Un lugar para los que amamos Corea del Sur. 🍜🇰🇷❤️</p>
-      <p>
-        <a href="#" class="btn btn-primary my-2">¡Sumérgete en Corea!</a>
-      </p>
-    </div>
-  </div>
-</section>
 <section class="container grid-section">
     {%- if site.posts.size > 0 -%}
     {%- for post in site.posts -%}
@@ -25,9 +14,9 @@ layout: default
                     {% if forloop.index0 == 4 %}grid__card__five{% endif %}
                     {% if forloop.index0 == 5 %}grid__card__six{% endif %}
                     {% if forloop.index0 == 6 %}grid__card__seven{% else %}grid__card{% endif %}">
-        <img class="card-img-top" src="/assets/img/como-planificar-un-viaje-a-corea-del-sur.jpeg" alt="Card image">
+        <img class="card-img-top" src="{{ site.baseurl }}/assets/img/como-planificar-un-viaje-a-corea-del-sur.jpeg" alt="Card image">
         <div class="card-img-overlay">
-            <a href="/posts/{{ post.category | slugize }}" class="text-decoration-none text-white"><p class="card-category">{{ post.category | slugize }}</p></a>
+            <a href="{{ site.baseurl }}/posts/{{ post.category | slugize }}" class="text-decoration-none text-white"><p class="card-category">{{ post.category | slugize }}</p></a>
             <a href="{{ post.url | relative_url }}" class="text-decoration-none text-white"><h3 class="card-title mt-3 mb-3">{{ post.title | escape }}</h3></a> 
             <a href="{{ post.url | relative_url }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">

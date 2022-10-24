@@ -33,7 +33,7 @@ instagram_username: deviajeporcorea
 
 
 # Build settings
-baseurl: deviajeporcorea
+baseurl: ""
 plugins:
   - jekyll-feed
 
