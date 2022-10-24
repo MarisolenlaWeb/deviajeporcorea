@@ -1,0 +1,23 @@
+
+<section class="container">
+    <div class="row">
+        {%- if site.posts.size > 0 -%}
+        {%- for post in site.posts -%}
+        <div class="col-lg-6 col-sm-12 mb-4">
+            <article class="card">
+                <img class="card-img-top" src="{{ site.baseurl }}/assets/img/como-planificar-un-viaje-a-corea-del-sur.jpeg" alt="Card image">
+                <div class="card-img-overlay">
+                    <a href="{{ site.baseurl }}/posts/{{ post.category | slugize }}" class="text-decoration-none text-white"><p class="card-category">{{ post.category | slugize }}</p></a>
+                    <a href="{{ post.url | relative_url }}" class="text-decoration-none text-white"><h3 class="card-title mt-3 mb-3">{{ post.title | escape }}</h3></a> 
+                    <a href="{{ post.url | relative_url }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+        {%- endfor -%}
+        {%- endif -%}
+    </div>
+</section>
